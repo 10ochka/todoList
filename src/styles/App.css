@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    background-color: rgb(221, 221, 221);
+
+    font-family: "Montserrat",Verdana,sans-serif;
+}
+
+.App, .TodoList, .Form, .AppHeader, .Input, .NoTodos {
+    background-color: rgb(255, 255, 255);
+}
+
+#root, .TodoItem, .Form, .TodoText, .DelIcon, .NoTodos {
+    display: flex;
+}
+
+#root, .App, .TodoList, .Form, .NoTodos {
+    justify-content: center;
+}
+
+.App {
+    width: 400px;
+    min-height: 400px;
+    height: max-content;
+
+    margin-top: 50px;
+
+    border-radius: 10px;
+    border-left: 2px solid rgb(152, 152, 152);
+    border-bottom: 2px solid rgb(152, 152, 152);
+}
+
+.TodoList {
+    display: grid;
+    margin: 10px 0;
+}
+
+.TodoItem {
+    justify-self: center;
+    width: 300px;
+    height: auto;
+    background: rgb(230, 230, 230);
+    text-align: left;
+    border-radius: 4px;
+    margin: 5px 0;
+}
+
+.AppHeader {
+    text-align: center;
+    margin: 10px;
+    font: bold;
+    font-size: larger;
+}
+
+.TodoText {
+    word-break: break-all;
+    margin: 10px;
+    font-size: small;
+    color: rgb(81, 81, 81);
+    background: rgb(230, 230, 230);
+ 
+}
+
+.DoneCheckbox {
+    cursor: pointer;
+    margin: 10px;
+    align-self: center;
+}
+
+.Input {
+    width: 268px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+.AddTodoButton {
+    width: 30px;
+    height: 30px;
+    margin-left: 2px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    background: rgb(230, 230, 230);
+}
+
+.DelIcon {
+    cursor: pointer;
+    align-self: center;
+    margin: 10px;
+}
+
+.NoTodos {
+    margin-top: 100px;
+    font-size: larger;
+    color: rgb(169, 169, 169);
+}
