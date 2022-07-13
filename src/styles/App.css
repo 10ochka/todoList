@@ -20,13 +20,19 @@
     justify-content: center;
 }
 
+.TodoList, .AppHeader, .DoneCheckbox, .DelIcon {
+    margin: 10px;
+}
+
+.TodoItem, .Input, .AddTodoButton {
+    border-radius: 5px;
+}
+
 .App {
     width: 400px;
     min-height: 400px;
     height: max-content;
-
     margin-top: 50px;
-
     border-radius: 10px;
     border-left: 2px solid rgb(152, 152, 152);
     border-bottom: 2px solid rgb(152, 152, 152);
@@ -34,29 +40,24 @@
 
 .TodoList {
     display: grid;
-    margin: 10px 0;
 }
 
 .TodoItem {
-    justify-self: center;
     width: 300px;
     height: auto;
     background: rgb(230, 230, 230);
-    text-align: left;
-    border-radius: 4px;
-    margin: 5px 0;
+    margin: 5px;
 }
 
 .AppHeader {
     text-align: center;
-    margin: 10px;
     font: bold;
     font-size: larger;
 }
 
 .TodoText {
-    word-break: break-all;
-    margin: 10px;
+    flex: 1;
+    margin: 10px 10px 10px 0;
     font-size: small;
     color: rgb(81, 81, 81);
     background: rgb(230, 230, 230);
@@ -64,15 +65,14 @@
 }
 
 .DoneCheckbox {
+    justify-self: left;
     cursor: pointer;
-    margin: 10px;
     align-self: center;
 }
 
 .Input {
     width: 268px;
     height: 30px;
-    border-radius: 5px;
     border: 1px solid grey;
 }
 
@@ -81,18 +81,16 @@
     height: 30px;
     margin-left: 2px;
     border: 1px solid grey;
-    border-radius: 5px;
     background: rgb(230, 230, 230);
 }
 
 .DelIcon {
+    left: 1px;
     cursor: pointer;
-    align-self: center;
-    margin: 10px;
+    align-self: center;  
 }
 
 .NoTodos {
-    margin-top: 100px;
-    font-size: larger;
+    margin-top: 120px;
     color: rgb(169, 169, 169);
 }
