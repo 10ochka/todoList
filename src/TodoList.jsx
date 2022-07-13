@@ -1,7 +1,6 @@
 import React from "react";
 import TodoItem from "./TodoItem";
 
-
 const TodoList = ({todos, remove}) => {
     return !todos.length?
         <div className="NoTodos">
@@ -13,6 +12,5 @@ const TodoList = ({todos, remove}) => {
                 todo => <TodoItem remove={remove} todo={todo} key={todo.id}></TodoItem>
             )}
         </div>
-       
 }
 export default TodoList
