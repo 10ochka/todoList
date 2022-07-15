@@ -1,3 +1,4 @@
 import React, { useContext } from "react";
 
-export const PathsContext = React.createContext(null)
+
+export const PathsContext = React.createContext( null )
