@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    background-color: ghostwhite;
+    font-family: "Montserrat",Verdana,sans-serif;
+}
+
+#root {
+    justify-content: center;
+    display: flex;
+}
